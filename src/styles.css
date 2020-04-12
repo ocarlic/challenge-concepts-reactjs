@@ -6,16 +6,30 @@
 
 body {
   font-size: 14px;
+  background: #1a1a1b;
+  font-family: sans-serif;
 }
 
 div {
-  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   margin: 20px;
+
+}
+
+div ul {
+  max-width: 540px;
 }
 
 div li {
   display: flex;
   align-items: center;
+  justify-content: space-between;
+  color: #FFF;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #4e4e4e;
 }
 
 div li + li {
@@ -31,9 +45,32 @@ button {
   margin-top: 15px;
   font-weight: bold;
   font-size: 14px;
+  border-radius: 2px;
 }
 
 div li button {
-  margin: 0 15px;
+  margin-top: 0;
   background: #ca4949;
+  border-radius: 2px;
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.tag-techs-items {
+  color: #00dcff70;
+  border: 1px solid #00dcff70;
+  background: #00dcff70;
+  padding: 2px 5px;
+  margin: 3px 3px 0 0;
+  border-radius: 2px;
+  font-weight: 100;
+}
+
+.tag-techs {
+  display: flex;
+  flex-wrap: wrap;
+  width: 70%;
 }
